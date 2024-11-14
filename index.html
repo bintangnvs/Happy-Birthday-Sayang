@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsif di mobile -->
+    <title>Happy Birthday Kayla Nayara Andjani Puteri Sayangku</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="music-controls">
+        <span>🎶 Play dulu lagunya, sayang ➡️</span>
+        <button onclick="document.querySelector('audio').play()">Play</button>
+        <button onclick="document.querySelector('audio').pause()">Pause</button>
+    </div>
+
+    <audio autoplay loop>
+        <source src="LANY - you! (Lyrics).mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+
+    <!-- Bagian kartu ucapan tengah dan foto samping -->
+    <div class="center-layout" data-aos="fade-in">
+        <img src="images/kayla 2.jpg" alt="Foto Kayla" class="side-photo" data-aos="fade-right">
+        
+        <div class="birthday-card">
+            <h1>Happy Birthday, Kayla Nayara Andjani Puteri Sayangku! ❤️</h1>
+            <p class="intro-text">Hari yang paling indah buat pacar aku yang paling cantik 🎂</p>
+            
+            <div class="message">
+                <p>Selamat ulang tahun, sayang! 🎉 Aku bersyukur banget bisa punya kamu di hidup aku. Kamu nggak cuma pacar, tapi juga sahabat terbaik yang selalu ada buat aku. Hari ini, aku berharap semua kebahagiaan di dunia ini selalu jadi milik kamu.</p>
+                <p>Semoga di umur kamu yang sekarang, semua impian dan keinginan kamu bisa terwujud ya sayang. Jangan lupa kalau kamu selalu punya aku yang bakal selalu ngedukung kamu di setiap langkah. 🥰</p>
+                <p>Aku nggak sabar buat lihat apa yang akan kamu capai, karna aku tau kamu pasti akan melakukan hal-hal besar. Kayla, kamu itu alesan dibalik senyuman aku setiap hari, dan aku harap aku bisa bikin kamu bahagia terus setiap harinya.</p>
+                <p><b>Happy Birthday, my one and only! may god always bless ur day, i love you kayla! ❤️💫</b></p>
+            </div>
+
+            <p class="signature">With all my love, Bintang Noviansyah Syamsu 💕</p>
+        </div>
+
+        <img src="kayla 3.jpg" alt="Foto Kayla" class="side-photo" data-aos="fade-left">
+    </div>
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #ffe4e1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+            flex-direction: column;
+        }
+
+        .music-controls {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        /* Tata letak kartu dan foto kiri-kanan */
+        .center-layout {
+            display: flex;
+            flex-wrap: wrap; /* Menyesuaikan tata letak pada mobile */
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            max-width: 90%;
+            animation: fadeIn 1s forwards;
+        }
+
+        .side-photo {
+            width: 150px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            max-width: 100%;
+            margin: 10px;
+        }
+
+        .birthday-card {
+            max-width: 500px;
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            width: 100%;
+            margin: 20px;
+        }
+
+        .birthday-card h1 {
+            font-size: 24px;
+            color: #ff69b4;
+            margin-bottom: 10px;
+        }
+
+        .intro-text {
+            font-size: 16px;
+            color: #ff6b6b;
+            margin-bottom: 20px;
+        }
+
+        .message {
+            font-size: 14px;
+            color: #333333;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .signature {
+            font-size: 16px;
+            color: #ff69b4;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        /* Animasi fade-in sederhana */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</body>
+</html>

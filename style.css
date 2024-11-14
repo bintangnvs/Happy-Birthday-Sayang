@@ -1,0 +1,208 @@
+/* Mengatur header */
+header {
+    padding: 20px 40px; /* Memberikan ruang lebih pada bagian atas/bawah dan kiri/kanan */
+    background-color: #ff9999;
+    color: white;
+    border-radius: 25px; /* Membuat sudut melengkung */
+    max-width: 80%; /* Membatasi lebar header agar tidak memenuhi seluruh layar */
+    text-align: center;
+    margin-bottom: 20px; /* Memberi jarak dengan elemen di bawahnya */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Opsional: Memberikan bayangan */
+}
+
+.parallax {
+    background-image: url('your-image.jpg');
+    height: 400px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header h1 {
+    animation: fadeIn 3s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+/* Styling untuk body */
+body {
+    font-family: "Sour Gummy", sans-serif;
+    background-color: #FEF9F2;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+}
+
+body {
+    background: linear-gradient(45deg, #FEF9F2, #eaa2c6);
+    background-size: 400% 400%;
+    animation: gradientMove 5s ease infinite;
+}
+
+@keyframes gradientMove {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.music-controls button {
+    position: relative;
+    overflow: hidden;
+}
+
+.music-controls button::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    animation: ripple 0.6s linear;
+}
+
+@keyframes ripple {
+    100% {
+        width: 0;
+        height: 0;
+    }
+}
+
+
+/* Kontrol musik */
+.music-controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #ff69b4;
+}
+
+.music-controls span {
+    font-size: 18px;
+    color: #ff69b4;
+    font-weight: bold;
+}
+
+.music-controls button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #ff69b4;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.music-controls button:hover {
+    background-color: #ff1493; /* Warna saat di-hover */
+    transform: scale(1.1); /* Membuat efek membesar saat di-hover */
+}
+
+//* Mengatur galeri foto */
+.photo-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.photo-gallery img {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.photo-gallery img {
+    animation: zoomIn 1s ease-out;
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Menambahkan teks di atas gambar menggunakan ::before */
+.photo-gallery img::before {
+    content: "Lihat deh";
+    position: absolute;
+    top: 10px; /* Atur jarak dari atas gambar */
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 5px 10px;
+    border-radius: 5px;
+    opacity: 1;
+}
+
+.photo-gallery img:hover {
+    transform: scale(1.1); /* Memperbesar gambar saat hover */
+    transition: transform 0.3s ease;
+}
+
+.music-controls button:hover {
+    transform: translateY(-5px); /* Mengangkat tombol saat hover */
+    background-color: #ff1493; /* Warna lebih gelap saat hover */
+}
+
+
+/* Pesan tambahan */
+.messages {
+    width: 80%; /* Menggunakan lebar yang lebih terbatas agar lebih rapi */
+    margin: 30px auto; /* Memberikan jarak di atas dan bawah dan membuat elemen berada di tengah */
+    background-color: #ffe6e6;
+    padding: 20px 40px;
+    text-align: center;
+    color: #333;
+    border-radius: 30px; /* Sudut melengkung */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Bayangan untuk efek lebih elegan */
+}
+
+
+/* Animasi untuk fade-in */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
